@@ -6,10 +6,9 @@ import 'package:uni_news_app/models/article_model.dart';
 import 'package:uni_news_app/src/services/settings_controller.dart';
 
 class CategoryNewsPage extends StatefulWidget {
-  final String categoryName;
   final String categoryValue;
 
-  CategoryNewsPage({this.categoryName, this.categoryValue});
+  CategoryNewsPage({this.categoryValue});
 
   @override
   _CategoryNewsPageState createState() => _CategoryNewsPageState();

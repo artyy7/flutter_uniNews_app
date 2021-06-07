@@ -7,9 +7,6 @@ import 'package:uni_news_app/views/category_list_drawer.dart';
 import '/helpers/settings_lists.dart';
 
 class CustomDrawerMenu extends StatefulWidget {
-  final Function getNews;
-
-  CustomDrawerMenu(this.getNews);
 
   @override
   _CustomDrawerMenuState createState() => _CustomDrawerMenuState();

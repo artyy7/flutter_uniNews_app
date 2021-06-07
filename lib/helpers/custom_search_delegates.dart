@@ -64,7 +64,7 @@ class CustomSearchDelegate extends SearchDelegate<RecentSearch> {
       future: oldFilters,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return MyList(snapshot.data, beginSearch, updateList);
+          return MyList(snapshot.data, beginSearch);
         }
         return Center(child: CircularProgressIndicator());
       },
@@ -75,9 +75,8 @@ class CustomSearchDelegate extends SearchDelegate<RecentSearch> {
 class MyList extends StatefulWidget {
   final List<RecentSearch> oldFilters;
   final Function beginSearch;
-  final Function updateList;
 
-  MyList(this.oldFilters, this.beginSearch, this.updateList);
+  MyList(this.oldFilters, this.beginSearch);
 
   @override
   _MyListState createState() => _MyListState();

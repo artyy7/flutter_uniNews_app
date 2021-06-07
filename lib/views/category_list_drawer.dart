@@ -14,7 +14,6 @@ class CategoryList extends StatelessWidget {
             context,
             MaterialPageRoute(
                 builder: (context) => CategoryNewsPage(
-                      categoryName: categoryName,
                       categoryValue: categoryValue,
                     )));
       },

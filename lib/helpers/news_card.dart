@@ -11,9 +11,8 @@ import 'package:share/share.dart';
 
 class NewsCard extends StatelessWidget {
   final Article article;
-  final DateTime postDate;
 
-  NewsCard({this.postDate, this.article});
+  NewsCard({this.article});
 
   @override
   Widget build(BuildContext context) {

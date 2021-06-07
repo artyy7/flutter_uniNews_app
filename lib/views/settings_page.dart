@@ -10,9 +10,6 @@ import '/helpers/settings_lists.dart';
 import 'package:smart_select/smart_select.dart';
 
 class SettingsPage extends StatefulWidget {
-  final Function getNewsList;
-
-  const SettingsPage({this.getNewsList});
 
   @override
   _SettingsPageState createState() => _SettingsPageState();
@@ -21,14 +18,6 @@ class SettingsPage extends StatefulWidget {
 class _SettingsPageState extends State<SettingsPage> {
   final settingsController = Get.put(SettingsController());
   List<String> selectedDomain = [];
-
-  @override
-  void initState() {
-    super.initState();
-    setState(() {
-      selectedDomain.add(settingsController.getNewsDomains);
-    });
-  }
 
   @override
   Widget build(BuildContext context) {

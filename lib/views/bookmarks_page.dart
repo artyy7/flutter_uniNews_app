@@ -60,7 +60,6 @@ class _BookMarksPageState extends State<BookMarksPage> {
           "appbarBookmarksTitle".tr,
           textAlign: TextAlign.center,
           style: TextStyle(
-              //color: Theme.of(context).accentColor,
               fontWeight: FontWeight.w600),
         ),
         elevation: 1,
