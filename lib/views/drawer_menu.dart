@@ -13,12 +13,6 @@ class CustomDrawerMenu extends StatefulWidget {
 }
 
 class _CustomDrawerMenuState extends State<CustomDrawerMenu> {
-
-  @override
-  void initState() {
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Drawer(
